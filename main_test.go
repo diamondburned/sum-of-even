@@ -19,7 +19,7 @@ func BenchmarkSumOfEvenBranchful(b *testing.B) {
 
 func BenchmarkSumOfEvenBranchfulSIMD(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		_ = sumOfEven(input)
+		_ = sumOfEvenSIMD(input)
 	}
 }
 
